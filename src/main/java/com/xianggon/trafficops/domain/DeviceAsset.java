@@ -93,4 +93,14 @@ public class DeviceAsset {
     public void updateStatus(DeviceStatus status) {
         this.status = status;
     }
+
+    public void updateBasicInfo(String name, String deviceType, DeviceStatus status,
+            RoadSection roadSection, String location, LocalDate installedAt) {
+        this.name = name;
+        this.deviceType = deviceType;
+        this.status = status;
+        this.roadSection = roadSection;
+        this.location = location;
+        this.installedAt = installedAt;
+    }
 }

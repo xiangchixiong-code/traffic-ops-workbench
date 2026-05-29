@@ -3,6 +3,7 @@ package com.xianggon.trafficops.repository;
 import com.xianggon.trafficops.domain.DeviceAsset;
 import com.xianggon.trafficops.domain.DeviceStatus;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -10,6 +11,8 @@ import org.springframework.data.repository.query.Param;
 public interface DeviceAssetRepository extends JpaRepository<DeviceAsset, Long> {
 
     long countByStatus(DeviceStatus status);
+
+    Optional<DeviceAsset> findByAssetCode(String assetCode);
 
     @Query("""
             select d from DeviceAsset d
