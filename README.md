@@ -248,6 +248,10 @@ GET /api/devices/export
 curl.exe -F "file=@C:\Users\cbx\Desktop\devices.xlsx" http://localhost:8080/api/devices/import
 ```
 
+仓库里提供了一份导入模板，可以下载后直接测试：
+
+- [设备台账导入模板](docs/sample-devices-import.xlsx)
+
 Excel 表头顺序：
 
 ```text
@@ -292,3 +296,9 @@ C:\Users\cbx\Tools\apache-maven-3.9.16\bin\mvn.cmd test
 - 设备台账 Excel 导出
 - 设备台账 Excel 导入并查询
 - OpenAPI 接口文档生成
+
+## 面试讲解
+
+如果面试官让你介绍这个项目，可以先按“项目背景 -> 业务模块 -> 技术实现 -> 和运营商/国企岗位的关系”这个顺序讲。仓库里整理了一份简短讲解稿：
+
+- [面试讲解稿](docs/interview-guide.md)
